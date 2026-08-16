@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizPulse Java</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body>
+
+  <div class="card">
+    <h1>QuizPulse</h1>
+
+    <div id="setup">
+      <input type="text" id="name" placeholder="Tu Apodo">
+      <button onclick="entrar()">Entrar</button>
+    </div>
+
+    <div id="game" class="hidden">
+      <h2 id="user"></h2>
+      <h3 id="score">Puntos: 0</h3>
+      <button onclick="ganarPuntos()" class="btn-points">+100 Puntos</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
